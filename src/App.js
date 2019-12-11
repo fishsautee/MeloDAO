@@ -19,12 +19,13 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import VpnKeyIcon from '@material-ui/icons/VpnKey';
 import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
+import NotesIcon from '@material-ui/icons/Notes';
 import LayersIcon from '@material-ui/icons/Layers';
 import Proposals from './Proposals';
 import Members from './Members';
+import About from './About';
 
 const drawerWidth = 240;
 
@@ -165,7 +166,7 @@ export default function App() {
     <Link to='/signin'>
     <ListItem button>
       <ListItemIcon>
-        <ShoppingCartIcon />
+        <VpnKeyIcon />
       </ListItemIcon>
       <ListItemText primary="Sign In" />
     </ListItem>
@@ -181,17 +182,19 @@ export default function App() {
     <Link to='/proposals'>
     <ListItem button>
       <ListItemIcon>
-        <BarChartIcon />
+        <NotesIcon />
       </ListItemIcon>
       <ListItemText primary="Proposals" />
     </ListItem>
     </Link>
+    <Link to='/about'>
     <ListItem button>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="About" />
     </ListItem>
+    </Link>
         </List>
         </div>
       </Drawer>
@@ -207,6 +210,9 @@ export default function App() {
           </Route>
           <Route path="/proposals">
             <Proposals />
+          </Route>
+          <Route path="/about">
+            <About />
           </Route>
           
 

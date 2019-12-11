@@ -1,3 +1,5 @@
+MeloDAO is a decentralised, autonomous music publishing platform that allows creators to frictionlessly fund, distribute and collect royalties on there artistic creations.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
